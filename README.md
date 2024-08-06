@@ -1,4 +1,4 @@
-# Line Scan Acquisition System
+# Line Scan Acquisition with Eye-in-Hand System
 
 ## Overview
 
@@ -17,6 +17,8 @@ This project implements a flexible line scan acquisition system using a camera m
 - C++17 compatible compiler
 - CMake (version 3.12 or higher)
 - Basler Pylon SDK
+- Sapera LT SDK
+- Azure Kinect SDK
 - Universal Robots RTDE library
 - A compatible Basler camera
 - A Universal Robots arm (tested with UR5e, but should work with other models)
@@ -24,14 +26,22 @@ This project implements a flexible line scan acquisition system using a camera m
 ## Building the Project
 
 1. Clone the repository:
+```console
 git clone https://github.com/yourusername/line-scan-acquisition.git
 cd line-scan-acquisition
+```
 2. Create a build directory:
+```console
 mkdir build && cd build
+```
 3. Run CMake:
+```console
 cmake ..
+```
 4. Build the project:
+```console
 cmake --build .
+```
 
 ## Usage
 After building, you can run the program with the following command:
@@ -42,19 +52,6 @@ Where:
 
 Example:
 ./LineScanAcquisition line 192.168.1.100
-
-## Project Structure
-
-- `include/`: Header files
-  - `Camera.hpp`: Abstract camera interface
-  - `Robot.hpp`: Abstract robot interface
-  - `PylonCamera.hpp`: Concrete implementation for Basler cameras
-  - `URobot.hpp`: Concrete implementation for UR robots
-- `src/`: Source files
-  - `line_scan_demo.cpp`: Entry point and demo implementation
-  - `PylonCamera.cpp`: Implementation of Pylon camera class
-  - `URobot.cpp`: Implementation of UR robot class
-- `CMakeLists.txt`: CMake build configuration
 
 ## Extending the Project
 
