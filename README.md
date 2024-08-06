@@ -7,8 +7,8 @@ This project implements a flexible line scan acquisition system using a camera m
 ## Features
 
 - Supports both line scan and area scan modes
-- Flexible camera interface using Basler's Pylon SDK
-- Robot control using Universal Robots' RTDE interface
+- Tested with UR10e and Fanuc M-10iD/12 Robots
+- Tested with Basler Ace 2 2D camera and Dalsa Spyder 3 line scan camera
 - Synchronized movement and image acquisition
 - Easily extensible for different camera and robot models
 
@@ -18,10 +18,7 @@ This project implements a flexible line scan acquisition system using a camera m
 - CMake (version 3.12 or higher)
 - Basler Pylon SDK
 - Sapera LT SDK
-- Azure Kinect SDK
 - Universal Robots RTDE library
-- A compatible Basler camera
-- A Universal Robots arm (tested with UR5e, but should work with other models)
 
 ## Building the Project
 
